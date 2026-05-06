@@ -20,6 +20,7 @@ class DashboardActivity : AppCompatActivity() {
 
         // Logic to transition to Add Expense screen
         binding.fabAddExpense.setOnClickListener {
+            startActivity(Intent(this, AddExpenseActivity::class.java))
             // We will build this Activity next!
             // startActivity(Intent(this, AddExpenseActivity::class.java))
         }
