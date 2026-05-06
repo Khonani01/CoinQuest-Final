@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".DashboardActivity" android:exported="false" />
         <activity android:name=".AddExpenseActivity" android:exported="false" />
+        <activity android:name=".BudgetSettingsActivity" android:exported="false" />
+        <activity android:name=".TransactionsActivity" />
     </application>
 
 </manifest>

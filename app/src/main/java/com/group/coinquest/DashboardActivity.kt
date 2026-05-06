@@ -18,6 +18,14 @@ class DashboardActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
+        binding.llGamification.setOnClickListener {
+            startActivity(Intent(this, BudgetSettingsActivity::class.java))
+        }
+
+        binding.llHeader.setOnClickListener {
+            startActivity(Intent(this, TransactionsActivity::class.java))
+        }
+
         // Logic to transition to Add Expense screen
         binding.fabAddExpense.setOnClickListener {
             startActivity(Intent(this, AddExpenseActivity::class.java))
